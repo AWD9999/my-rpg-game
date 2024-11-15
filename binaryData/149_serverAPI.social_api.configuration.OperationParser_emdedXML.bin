@@ -1,0 +1,54 @@
+<data>
+	<socSet name="0" description="VK">
+		<settings>
+			<add name="returnType" value="array"/>
+			<add name="returnPropertyName" value="response" />
+		</settings>
+		<operations>
+			<add name="getAppFriends" type="serverAPI.social_api.social_operation.GetAppFriendsOperation"/>
+            <add name="getFriends" type="serverAPI.social_api.social_operation.GetFriendsOperation"/>
+            <add name="getPhotoAlbums" type="serverAPI.social_api.social_operation.GetPhotoAlbumsOperation"/>
+            <add name="getPhotos" type="serverAPI.social_api.social_operation.GetPhotosOperation"/>
+            <add name="getPhotosUploadServer" type="serverAPI.social_api.social_operation.GetPhotosUploadServerOperation"/>
+            <add name="getUserBalance" type="serverAPI.social_api.social_operation.GetUserBalanceOperation" returnType="object"/>
+            <add name="getUsersInfo" type="serverAPI.social_api.social_operation.GetUsersInfoOperation"/>
+            <add name="getWallPhotoUploadServer" type="serverAPI.social_api.social_operation.GetWallPhotoUploadServerOperation" returnType="object"/>
+            <add name="photosSave" type="serverAPI.social_api.social_operation.PhotosSaveOperation"/>
+            <add name="savePost" type="serverAPI.social_api.social_operation.SavePostOperation" returnType="object"/>
+            <add name="createPhotoAlbum" type="serverAPI.social_api.social_operation.CreatePhotoAlbumOperation"/>
+            <add name="postToWall" type="serverAPI.social_api.social_operation.PostToWallCommand"/>
+		</operations>
+	</socSet>
+	<socSet name="1" description="MM">
+		<settings>
+			<add name="returnType" value="array"/>
+			<add name="returnPropertyName" value="NULL"/>
+		</settings>
+		<operations>
+			<add name="getAppFriends" type="serverAPI.social_api.social_operation.GetAppFriendsOperation"/>
+            <add name="getFriends" type="serverAPI.social_api.social_operation.GetFriendsOperation"/>
+            <add name="getPhotoAlbums" type="serverAPI.social_api.social_operation.GetPhotoAlbumsOperation"/>
+            <add name="getPhotos" type="serverAPI.social_api.social_operation.GetPhotosOperation"/>
+            <add name="getPhotosUploadServer" type="serverAPI.social_api.social_operation.GetPhotosUploadServerOperation"/>
+            <add name="getUserBalance" type="serverAPI.social_api.social_operation.GetUserBalanceOperation" returnType="object"/>
+            <add name="getUsersInfo" type="serverAPI.social_api.social_operation.GetUsersInfoOperation"/>
+            <add name="getWallPhotoUploadServer" type="serverAPI.social_api.social_operation.GetWallPhotoUploadServerOperation" returnType="object"/>
+            <add name="photosSave" type="serverAPI.social_api.social_operation.PhotosSaveOperation"/>
+            <add name="savePost" type="serverAPI.social_api.social_operation.SavePostOperation" returnType="object"/>
+            <add name="createPhotoAlbum" type="serverAPI.social_api.social_operation.CreatePhotoAlbumOperation"/>
+		</operations>
+	</socSet>
+    <socSet name="2" description="OK">
+		<settings>
+			<add name="returnType" value="array"/>
+			<add name="returnPropertyName" value="uids" />
+		</settings>
+		<operations>
+			<add name="getAppFriends" type="serverAPI.social_api.social_operation.GetAppFriendsOperation"/>
+            <add name="getFriends" type="serverAPI.social_api.social_operation.GetFriendsOperation" returnProperyName="NULL"/>
+            <add name="getPhotosUploadServer" type="serverAPI.social_api.social_operation.GetPhotosUploadServerOperation" returnType="object" />
+            <add name="getUsersInfo" type="serverAPI.social_api.social_operation.GetUsersInfoOperation" returnType="array"/>
+            <add name="photosSave" type="serverAPI.social_api.social_operation.PhotosSaveOperation" returnType="array" returnProperyName="NULL"/>
+		</operations>
+	</socSet>
+</data>
