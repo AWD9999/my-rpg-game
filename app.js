@@ -1,11 +1,8 @@
-const startGameButton = document.getElementById("startGame");
+// Функция для отправки выбранного класса боту
+function chooseClass(className) {
+    // Отправка данных через Telegram Web Apps API
+    window.Telegram.WebApp.sendData(className);
+    alert(`Вы выбрали класс: ${className}`);
+}
 
-// Инициализация Telegram Web App
-const tg = window.Telegram.WebApp;
-tg.expand(); // Разворачиваем Mini App на весь экран
-
-startGameButton.addEventListener("click", () => {
-    // Отправляем данные боту
-    tg.sendData("start_game"); // Отправляем команду начала игры
-    alert("Игра начата!");
-});
+// Другие возможные функции для обработки интерфейса Mini App можно добавить здесь
