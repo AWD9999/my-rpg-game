@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RPG Game</title>
+    <title>Общак</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://telegram.org/js/telegram-web-app.js"></script> <!-- Telegram Web Apps API -->
+    <script src="app.js" defer></script>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script> <!-- Telegram Web App API -->
 </head>
 <body>
     <div id="app">
-        <h1>Выберите класс персонажа</h1>
-        <button onclick="chooseClass('Воин')">Воин</button>
-        <button onclick="chooseClass('Маг')">Маг</button>
-        <button onclick="chooseClass('Лучник')">Лучник</button>
+        <h1>Чё делать, братан?</h1>
+        <button onclick="chooseAction('baryga')">Зайти к барыге</button>
+        <button onclick="chooseAction('walk')">Пройтись по району</button>
+        <button onclick="chooseAction('fight')">Сразиться с пацанами</button>
     </div>
-    <script src="app.js"></script>
 </body>
 </html>
